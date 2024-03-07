@@ -1,0 +1,1 @@
+quantity = number.toString().length
