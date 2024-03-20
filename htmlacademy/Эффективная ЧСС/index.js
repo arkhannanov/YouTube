@@ -1,0 +1,1 @@
+const pulseAtWorkout = Math.round(((220 -age) - pulseAtRest)*(intensity/100) +pulseAtRest)
