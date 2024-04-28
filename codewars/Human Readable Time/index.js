@@ -6,9 +6,8 @@ function humanReadable (seconds) {
     const formatSpelling = (value, hours) => {
         if(!value) return '00'
         if(value && value.toString().length === 1) return `0${value}`
-        if(value === 60) return '00'
+        if(value === 60 && !hours) return '00'
         if(value > 60 && !hours) return `${value - 60}`
         return value
     }
     return `${formatSpelling(hours, true)}:${formatSpelling(minutes)}:${formatSpelling(second)}`
-}
